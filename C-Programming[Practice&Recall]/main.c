@@ -6,6 +6,10 @@ int main(void){
     int n;
     printf("Enter any number to get it's corresponding factoral:\t");
     scanf("%d", &n);
+    if(n < 0){
+        printf("F*ck U, Don't try to be oversmart. It's undefined for negative itegers.\n");
+        return -1;
+    }
     int result = fact(n);
     printf("The corresponding factoral is: %d\n", result);
 
