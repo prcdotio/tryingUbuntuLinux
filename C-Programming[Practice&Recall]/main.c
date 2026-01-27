@@ -1,21 +1,23 @@
 /*
-generating a function to check whether the student is pass or fail on the basis of score
-return "Pass" if score is equal or above 50 otherwise return "Fail"
-*/ 
+Testing recursion with prefix increment/decrement and postfix increment/decrement
+*/
 
+//testing via recursion
 #include <stdio.h>
-char* is_pass_or_fail(int score);
+
+int factoral(int num);
+
 int main(void){
-    int score;
-    printf("Enter the obtained score:\t");
-    scanf("%d", &score);
-    char *result = is_pass_or_fail(score);
-    printf("%s\n", result);
+    int num;
+    printf("Enter you number to get it's corresponding factoral:\t");
+    scanf("%d", &num);
+    int result = factoral(num);
+    printf("The corresponding factoral is:\t%d.\n", result);
 
     return 0;
 }
-char* is_pass_or_fail(int score){
-    if(score >= 50)
-        return "Pass";
-    return "Fail";
+int factorial(int num){
+    if(num == 1 || num == 0)
+        return 1;
+    return num * factoral(--num);
 }
