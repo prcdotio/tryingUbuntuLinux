@@ -1,23 +1,14 @@
-/*
-Testing recursion with prefix increment/decrement and postfix increment/decrement
-*/
-
-//testing via recursion
 #include <stdio.h>
-
-int factoral(int num);
-
 int main(void){
-    int num;
-    printf("Enter you number to get it's corresponding factoral:\t");
-    scanf("%d", &num);
-    int result = factoral(num);
-    printf("The corresponding factoral is:\t%d.\n", result);
+    int ID;
+    char name[50];
+
+    printf("Enter your ID:\t");
+    scanf("%d", &ID);
+    printf("Enter your Name:\t");
+    scanf("\n");
+    scanf("%[^\n]", name);
+    printf("\nID:\t%d\t\tName:\t%s.\n", ID, name);
 
     return 0;
-}
-int factorial(int num){
-    if(num == 1 || num == 0)
-        return 1;
-    return num * factoral(--num);
 }
