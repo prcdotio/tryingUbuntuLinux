@@ -1,14 +1,13 @@
 #include <stdio.h>
 int main(void){
-    int ID;
+    int id;
     char name[50];
-
-    printf("Enter your ID:\t");
-    scanf("%d", &ID);
-    printf("Enter your Name:\t");
+    printf("Enter you id:\t");
+    scanf("%d", &id);
+    printf("Enter your name:\t");
     scanf("\n");
     scanf("%[^\n]", name);
-    printf("\nID:\t%d\t\tName:\t%s.\n", ID, name);
+    printf("ID:\t%d\t\tName:\t%s.\n", id, name);
 
     return 0;
 }
