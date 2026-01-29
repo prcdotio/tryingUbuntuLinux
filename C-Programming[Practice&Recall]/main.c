@@ -1,13 +1,12 @@
+/*
+checking given number is +ve/-ve or 0
+no use of if else, switch or ternery
+*/
 #include <stdio.h>
 int main(void){
-    int id;
-    char name[50];
-    printf("Enter you id:\t");
-    scanf("%d", &id);
-    printf("Enter your name:\t");
-    scanf("\n");
-    scanf("%[^\n]", name);
-    printf("ID:\t%d\t\tName:\t%s.\n", id, name);
-
-    return 0;
+    int num = 20;
+    int check = (num > 0) - (num < 0);
+    char *result[] = {"Negative", "Zero", "Positive"};
+    printf("%s\n", result [check + 1]);
+return 0;
 }
