@@ -1,18 +1,11 @@
 /*
-Source: HackerRank
-Playing with character to get input not only word instead we will get sentence until user hit Enter key.
+print something without using semi colon 
 */
 
 #include <stdio.h>
 int main(void){
-    int id;
-    char name[50];
-    printf("ID:\t");
-    scanf("%d", &id);
-    getchar();
-    printf("Name:\t");
-    scanf("%[^\n]", name);
-    printf("ID:\t%d\t\tName:\t%s.\n", id, name);
+    // using if control flow
+    if(printf("Hello, World!!\n")) {}
 
     return 0;
 }
